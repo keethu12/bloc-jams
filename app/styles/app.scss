@@ -11,8 +11,7 @@
 
 body, html {
   // Allows us to set the min-height for child elements.
-  height: 100%;
-  background-color: #fafafa;
+  height: 100%;;
 }
 
 // Want the edges for Bootstrap navbars to be non-rounded.
@@ -21,29 +20,36 @@ body, html {
   margin-bottom: 0;
 }
 
-
-
-h1 {
-  color: #DC143C;
-  font-weight: bold;
-  font-size: 78px;
+.album-header-container{
+  margin-top: 55px;
+  margin-bottom: 25px;
 }
 
-p1 {
-  color: #00CED1;
-  font-size: 30px;
+.album-header-information{
+  margin-top: 45px;
+  margin-bottom: 20px;
 }
 
-p2 {
-  color: #FF1493;
-  padding: 100px;
-  font-weight: bold;
-  text-decoration: none;
-  &:hover { text-decoration: underline;
-  color: #FF8C00  ; }
-
-
-.btn {
-  color: #F08080;
-  &:hover: #CD5C5C;
+.album-title, .album-artist, .album-meta-info{
+  line-hieght: 150%;
 }
+
+.album-artist {
+  font-size: 48px;
+  @include font-open-sans(300);
+}
+
+.album-artist {
+  font-size: 24px;
+  @include font-open-sans(500);
+}
+
+.table.album-song-listing {
+  @include font-open-sans(300);
+
+  td {
+    padding: 20px;
+    border-top: 1px solid rgba(white, .4);
+  }
+}
+
